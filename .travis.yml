@@ -6,6 +6,7 @@ before_install:
   - "npm install -g meteorite"
   - "npm install -g coffee-script"
   - "npm install -g spacejam"
+  - "mrt --version"
   - "mrt update"
   - "export PACKAGE_DIRS=`pwd`/packages"
 script: "spacejam test-packages ./"
